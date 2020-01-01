@@ -1,0 +1,8 @@
+{
+  "name": "Text To Emoji",
+  "version": "1.0.0",
+  "description": "Changes the text into emoji.",
+  "author": "Nimplex",
+  "license": "MIT",
+  "repo": "https://github.com/Nimplex/texttoemoji/"
+}
