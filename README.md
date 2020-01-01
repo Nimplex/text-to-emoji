@@ -1,4 +1,4 @@
-# texttoemoji
-Powercord plugin. Changes the text into emoji.
+# Text To Emoji
+### Powercord plugin. Changes the text into emoji.
 
 ![preview](https://raw.githubusercontent.com/Nimplex/texttoemoji/master/preview.png)
