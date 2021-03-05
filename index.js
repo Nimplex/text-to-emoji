@@ -54,16 +54,17 @@ function texttoemoji(v) {
 }
 
 module.exports = class ToEmoji extends Plugin {
-  startPlugin() {
-    this.registerCommand(
-      "texttoemoji",
-      ["emoji"],
-      "text to emoji\nAlias: `emoji`",
-      "{c} [ text ]",
-      args => ({
-        send: true,
-        result: texttoemoji(args.join(" "))
-      })
-    );
+  async startPlugin() {
+    powercord.api.commands.registerCommand({
+      command: "texttoemoji",
+      description: "text to emoji",
+      usage: "{c} [ text ]",
+      executor: (args) => {
+        return {
+            send: true,
+            result: texttoemoji(args.join(" "))
+        }
+      }
+    });
   }
 };
